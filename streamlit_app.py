@@ -34,7 +34,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?')
   if not fruit_choice:
-    streamline.error("Please select fruit")
+    streamlit.error("Please select fruit")
   else:
     streamlit.write('The user entered ', fruit_choice)
     res_fr=fruityvice_date(fruit_choice)
